@@ -1,0 +1,55 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.hero__title {
+  font-size: 5rem; /* increased font size for visual impact */
+  font-weight: 700;
+  margin-bottom: 1rem; /* spacing between title and subtitle */
+  background: linear-gradient(to bottom right, #16abff, #054b8b);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero__subtitle {
+  font-size: 1rem;
+  margin-bottom: 100px; /* spacing between subtitle and buttons */
+  color: rgb(var(--foreground-rgb));
+}
+
+.hero__buttons {
+  display: flex;
+  gap: 5px; /* Adjust based on your design */
+}
+
+.hero__button--get-started {
+  width: 110px;
+  height: 2rem; /* Tailwind's h-12 is equivalent to 3rem */
+  background-color: #131922; /* bg-zinc-900 */
+  border-radius: 7px;
+  color: white;
+  margin-right: 5px; /* mr-[15px] */
+  font-size: 0.9rem;
+  border: none;
+  cursor: pointer;
+}
+
+.hero__button--github {
+  width: 110px;
+  height: 2rem; /* Tailwind's h-12 is equivalent to 3rem */
+  background-color: white; /* bg-white */
+  color: #6b7280; /* text-neutral-500 */
+  border-radius: 7px;
+  border: 2px solid #d1d5db; /* border-2 border-neutral-300 */
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+/* Add media queries and other styles as needed */
